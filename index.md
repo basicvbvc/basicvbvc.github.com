@@ -1,6 +1,6 @@
 ---
 layout: page
-title: sigh 
+title: LJ'Blog  
 ---
 
 <br>
