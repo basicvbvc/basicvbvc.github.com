@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>函数连续与有界</title>
+   <meta name="author" content="李佳" />
+   <link href="http://feeds.feedburner.com/" rel="alternate" title="your title" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/tom/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/tom/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typekit -->
+   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+  <div class="site">
+    <div class="title">
+      <a href="/">LJ'Blog</a>
+
+      <a class="extra" href="/archive.html">Archive</a>
+      <a class="extra" href="">Pages</a>
+      <a class="extra" href="/categories.html">Categories</a>
+      <a class="extra" href="/tags.html">Tags</a>
+    </div>
+  
+    
+<div id="post">
+  <h1>函数连续与有界</h1>
+  <p class="meta">
+    29 March 2013 
+    
+  </p>
+  <p>函数连续与有界</p>
+
+<p>今晚看定积分定义的时候，注意到一个细节，定义中对于f(x)的前提是在[a,b]有界，这个其实应该早就想到了，在课本上给出的两个可积充分定理中，定理2便是要求f(x)在[a,b]有界，且只有有限个间断点。然后一直到反常积分中的无界函数积分，总算才从连续函数的前提中扩展出来了。</p>
+
+<p>  那么函数连续和有界有什么联系？仔细想一下，不难有如下结论:</p>
+
+<ul>
+<li><p>  在区间I上连续的函数未必有界。如lnx</p></li>
+<li><p>在区间I上有界的函数未必连续。如定义f(x)=sinx,x在[0,1],我可以将点sin(1/2)抠出，令其=2.此函数在[0,1]有界，却不连续。</p></li>
+</ul>
+
+
+<p>还是让我们回到问题本身，我是在定积分章节想到了这个小问题，我们知道，定积分讨论的区间是类似[a,b]这种的闭区间。而根据闭区间上连续函数的性质，我们容易发现，连续函数在闭区间上必有界，而闭区间上有界函数未必连续，全文完。</p>
+
+<p>今晚在想，Markdown中可否嵌入tex呢？发现还真可以！以后就可以用Markdown排出漂亮的数学公式了。举例如下:</p>
+
+<p>  %%\alpha+\beta=\gamma%%，对应的tex是\alpha+\beta=\gamma，只需在代码两边各加上两个$$</p>
+
+<p>  %%a+b=c%%,对应的源码:a+b=c</p>
+
+<p>  %%\exp(-\frac{x<sup>2</sup>}{2})%%,对应源码:\exp(-\frac{x<sup>2</sup>}{2})</p>
+
+<p>以上的源码我是在一个叫做Notepag的在线编辑器中测试的，结果我博客用的hexo不支持。。。</p>
+
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>04 Apr 2013</span> &raquo; <a href="/2013/04/04/jekyll">博客改用Jekyll</a></li>
+    
+      <li><span>01 Apr 2013</span> &raquo; <a href="/2013/04/01/">差距</a></li>
+    
+      <li><span>28 Mar 2013</span> &raquo; <a href="/2013/03/28/">极点</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'ljblog'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+  
+    <div class="footer">
+      <div class="contact">
+        <p>
+          李佳<br />
+          Playfully doing somehing difficult,whether difficult or not,that is hacking...<br />
+          <a href='mailto:basicvbvc@gmail.com'>basicvbvc@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact">
+        <p>
+          <a href="http://github.com/basicvbvc/">github.com/basicvbvc</a><br />
+          <a href="http://twitter.com/今年大三了/">twitter.com/今年大三了</a><br />
+        </p>
+      </div>
+      <div class="rss">
+        <a href="http://feeds.feedburner.com/">
+          <img src="/assets/themes/tom/images/rss.png" alt="Subscribe to RSS Feed" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="http://github.com/basicvbvc"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+  
+</body>
+</html>
+

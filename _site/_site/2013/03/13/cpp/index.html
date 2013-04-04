@@ -1,0 +1,88 @@
+<hr />
+
+<p>layout: post
+title: "Cpp程序设计笔记"</p>
+
+<p>大学里面有两个痛点，一个是高数，另一个就是C++，都是大一时欠的债。花了四五天时间把C++程序设计（谭浩强）过了一遍，书的好坏就不评价了，现在的我还没那水平，笔记如下：</p>
+
+<p>P22 一个整型常量可以有3种表示形式：（1）十进制整数，如120，78l(L) （2）八进制整数，在十进制基础上前面加0即可，如020 （3）十六进制，在十进制基础上前面加0X或0x，如0x25。</p>
+
+<p>P26 如果在一个字符串中最后一个字符是'\',则表示它是续行符，下一行的字符是该字符串的一部分，如</p>
+
+<pre><code>cout&lt;&lt;"Hello Wor\ 
+ld"&lt;&lt;endl;
+</code></pre>
+
+<p>P31 位运算符，&lt;&lt;(按位左移） >>（按位右移） &amp;(按位与) |(按位或) ^(按位异或) ~(按位取反)</p>
+
+<p>P34 ++和--只能用于变量，而不能用于常量和表达式，if i=3;cout&lt;&lt;-i++;(-3)关于这两个运算符，平时用到较多，这里就不赘述了。</p>
+
+<p>P35 在强制类型转换时，得到的是一个所需类型的中间变量，变量原类型和值并不变，如 (int)x;如果x原来是double，值为3.6，进行强制类型转换得到一个int类型中间变量，值为3，如：</p>
+
+<pre><code>double d_i=3.9999;
+cout&lt;&lt;(int)d_i&lt;&lt;' '&lt;&lt;d_i&lt;&lt;endl;   "3    3.9999"
+</code></pre>
+
+<p>P38 凡是二目运算符，都可以与赋值符一起组成复合赋值符，+=,-=,*=,/=,%=,&lt;&lt;=,>>=,&amp;=,|=,^=  (主要是后面的位运算符，因为我平时很少用到位运算符 sigh...)</p>
+
+<p>P51 在执行cout语句时，并不是插入一个数据就马上输出一个数据，而是先把插入的数据顺序存放在输出缓冲区中，直到缓冲区满或遇到cout语句中的endl（或'\n',ends,flush)为止，此时将缓冲区中已有的数据一起输出，并清空缓冲区。</p>
+
+<p>P53  不能用cin语句把空格字符和回车换行符作为字符输入给字符变量，可以通过getchar（）</p>
+
+<p>P54  设置输出格式：比较常用到的就是n位有效数字，保留n位有效数字，</p>
+
+<pre><code>cout&lt;&lt;setprecision(n)&lt;&lt;car&lt;&lt;endl;
+ cout&lt;&lt;setprecision(n)&lt;&lt;setiosflags(ios::fixed)&lt;&lt;var&lt;&lt;endl;
+</code></pre>
+
+<p>P62 在判断一个逻辑量是否为真时，采取的标准是：如果其值是0就认为假，如果其值非0，就认为是真。
+''''c''''
+int i_i=-1;
+if(i_i) cout&lt;&lt;"true"&lt;&lt;endl;
+else cout&lt;&lt;"false"&lt;&lt;endl;
+<code>c</code></p>
+
+<p>P69 在switch中，根据switch表达式的值找到与之匹配的case子句，就从此case子句开始顺序执行下去，所以，一般情况下才要在case子句后面加break;i在case子句中虽然包含一个以上执行的子句，但可以不必用{}。多个case子句可共用一组执行语句。</p>
+
+<pre><code>case 'a':
+case 'b':
+case 'c':cout&lt;&lt;"hehe"&lt;&lt;endl;break;
+</code></pre>
+
+<p>P 关于for与continue，写了段小代码：</p>
+
+<pre><code>int main()
+{
+
+#ifdef ABC //这个不是死循环，continue执行完毕，然后执行i++
+for(int i=0;i&lt;=2;i++)
+continue;
+cout&lt;&lt;"不是死循环"&lt;&lt;endl;
+
+#endif
+
+#ifdef ABCD //这个是死循环,i一直是0
+for(int i=0;i&lt;=2;)
+{   continue;
+    i++;
+}       
+cout&lt;&lt;"不是死循环"&lt;&lt;endl;
+#endif
+return 0;
+}
+</code></pre>
+
+<p>P78  关于getchar(),</p>
+
+<pre><code>for(;(c=getchar())!='\n';)cout&lt;&lt;c;  可以来输入输出字符串,并且在一些字符串处理中，可以单个字符处理，很方便:)
+</code></pre>
+
+<p>P96 在函数声明中可以不写行参名字，如：float add(float,float); 这种函数叫做函数原型（function prototype),只是在编译阶段进行基本的语法检查，所以声不声明行参变量并没什么不同。</p>
+
+<p>P98 inline function, 可以在声明和定义时都写inlint，也可以只在其中一处写inline，效果相同，ps:对函数作inline声明，只是对编译系统的建议，并不是强制性的，还有，现在编译器也会在优化阶段对某些函数进行inline处理。。</p>
+
+<p>P101 function overloading ，重载函数的参数个数、参数类型、参数顺序3者中必须至少有一个不同，函数返回值类型可以相同也可以不相同，函数名相同，函数体可相同 可不相同。</p>
+
+<p>P103 function template, template <typename/class T>   ps：只适用于参数的个数相同而类型不同，且函数体相同的情况，如果参数的个数不同，则不能用函数模板。</p>
+
+<p>P104  有默认参数的函数</p>

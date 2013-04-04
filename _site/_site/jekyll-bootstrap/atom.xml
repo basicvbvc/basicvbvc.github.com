@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>LJ'Blog</title>
+ <link href="http://basicvbvc.github.com/" rel="self"/>
+ <link href="http://basicvbvc.github.com"/>
+ <updated>2013-04-04T15:15:53+08:00</updated>
+ <id>http://basicvbvc.github.com</id>
+ <author>
+   <name>李佳</name>
+   <email>basicvbvc@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>博客改用Jekyll</title>
+   <link href="http://basicvbvc.github.com/2013/04/04/jekyll"/>
+   <updated>2013-04-04T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/04/04/jekyll</id>
+   <content type="html">&lt;p&gt;之前博客使用的是台湾一位程序员开发的Hexo，但是对Hexo下的theme一直不太满意，感觉不是特别清爽，最主要的是博文不居中，这是我无法忍受的，我一直认为，只有文章位于屏幕正中央，才能有最好的阅读体验，从早晨10点折腾到现在，期间碰到很多问题，巨多。没办法，自己web技术几乎为负，还好有google，虽然还有好几处问题没解决，不过，总算能用了，所以，果断push。&lt;/p&gt;
+
+&lt;p&gt;Jekyll是Ruby开发，正好可以等熟悉Ruby语法后看看源码。&lt;/p&gt;
+
+&lt;p&gt;希望以后博客不再折腾了，忒累了。。&lt;/p&gt;
+
+&lt;br&gt;
+
+
+&lt;br&gt;
+
+
+&lt;br&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>差距</title>
+   <link href="http://basicvbvc.github.com/2013/04/01/"/>
+   <updated>2013-04-01T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/04/</id>
+   <content type="html">&lt;p&gt;今晚做高数，一度陷入繁琐的计算中，然后复习单词时已经10点多了，还好，下午上课时把第一个list看了遍，应该不到40分钟就把俩list过了一遍，由于今天刚买的本子，整理句子还有单词本，当然认认真真的写了几页，然后比平时晚走了十几分钟，我有个习惯，往宿舍走的时候喜欢看看主教还亮多少灯，然后看看一楼阶梯教室是不是还有人在奋笔疾书，就喜欢看其他人认真读书的样子:) 不巧，今天竟然几乎所有教室都灭灯了。回来后赶紧洗刷，发现时间足够，从明天起，每晚再挤十几分钟背单词。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>函数连续与有界</title>
+   <link href="http://basicvbvc.github.com/2013/03/29/"/>
+   <updated>2013-03-29T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/</id>
+   <content type="html">&lt;p&gt;函数连续与有界&lt;/p&gt;
+
+&lt;p&gt;今晚看定积分定义的时候，注意到一个细节，定义中对于f(x)的前提是在[a,b]有界，这个其实应该早就想到了，在课本上给出的两个可积充分定理中，定理2便是要求f(x)在[a,b]有界，且只有有限个间断点。然后一直到反常积分中的无界函数积分，总算才从连续函数的前提中扩展出来了。&lt;/p&gt;
+
+&lt;p&gt;  那么函数连续和有界有什么联系？仔细想一下，不难有如下结论:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;  在区间I上连续的函数未必有界。如lnx&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在区间I上有界的函数未必连续。如定义f(x)=sinx,x在[0,1],我可以将点sin(1/2)抠出，令其=2.此函数在[0,1]有界，却不连续。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;还是让我们回到问题本身，我是在定积分章节想到了这个小问题，我们知道，定积分讨论的区间是类似[a,b]这种的闭区间。而根据闭区间上连续函数的性质，我们容易发现，连续函数在闭区间上必有界，而闭区间上有界函数未必连续，全文完。&lt;/p&gt;
+
+&lt;p&gt;今晚在想，Markdown中可否嵌入tex呢？发现还真可以！以后就可以用Markdown排出漂亮的数学公式了。举例如下:&lt;/p&gt;
+
+&lt;p&gt;  %%\alpha+\beta=\gamma%%，对应的tex是\alpha+\beta=\gamma，只需在代码两边各加上两个$$&lt;/p&gt;
+
+&lt;p&gt;  %%a+b=c%%,对应的源码:a+b=c&lt;/p&gt;
+
+&lt;p&gt;  %%\exp(-\frac{x&lt;sup&gt;2&lt;/sup&gt;}{2})%%,对应源码:\exp(-\frac{x&lt;sup&gt;2&lt;/sup&gt;}{2})&lt;/p&gt;
+
+&lt;p&gt;以上的源码我是在一个叫做Notepag的在线编辑器中测试的，结果我博客用的hexo不支持。。。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>极点</title>
+   <link href="http://basicvbvc.github.com/2013/03/28/"/>
+   <updated>2013-03-28T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/</id>
+   <content type="html">&lt;p&gt;今天上午应该是到达背单词极点了，好不容易啃完一个list，第二个实在背不下去了，这几天状态就不是特别好，坚持一下，熬过这几天。睡觉。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>shell脚本编程读书笔记</title>
+   <link href="http://basicvbvc.github.com/2013/03/26/shell"/>
+   <updated>2013-03-26T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/26/shell</id>
+   <content type="html">&lt;p&gt;最近打算把shell编程再看一遍，语言这东西，不用就忘。。。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>我究竟想要什么样的生活</title>
+   <link href="http://basicvbvc.github.com/2013/03/24/"/>
+   <updated>2013-03-24T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/</id>
+   <content type="html">&lt;h2&gt;&lt;strong&gt;有意义的事情&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;两天没睡午觉，实在熬不住了，洗完澡回来倒头就睡，睁眼一看，3点。&lt;/p&gt;
+
+&lt;p&gt;磨蹭了会，上午的单词任务还没完成，反正书背回来了，干脆在宿舍背会单词。没去教室，总觉的有点愧疚，所以，我决定做点有意义的事情：&lt;strong&gt;思考一下我到底想要什么样的生活&lt;/strong&gt;（是生活而不是人生，人生这词太大）&lt;/p&gt;
+
+&lt;h2&gt;&lt;strong&gt;读研 二战 or 工作？&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;今年大三了，其实我一直觉得我的大学生活已经结束了。今年就是全力备战考研，明年等结果，两种可能：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;顺利考入理想大学，有书读就是幸福！&lt;/li&gt;
+&lt;li&gt;名落孙山，哎，接下来就得实际一点，二战？工作？我现在也不好说，得看具体情况。如果觉得有遗憾，干脆再来一年，或者大彻大悟，研究生也就那么回事！然后收拾收拾找工作。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;现在我所思考的是，不管我走了以上哪条路，我对生活的追求是不变的，读研也罢，工作也好，现阶段（二十八九岁之前）都只是处于积累技术阶段，虽然不是神童，也没多么聪明，但我一直以来对未来充满憧憬的原因是：我是真的外类外类like CS。而且一直想做一些很酷的事情，我觉得这就够了：热爱-&gt;学习-&gt;创造。这简直就是标准的成功模板嘛！&lt;/p&gt;
+
+&lt;h2&gt;&lt;strong&gt;我想要的&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;其实对于所谓的财富，我追求的并不多，将来买得起房子，车子，一家人做自己想做的事情时不用愁钱，就已经很完美了。&lt;/p&gt;
+
+&lt;p&gt;目前给自己定的大方向：二十八九岁之前专攻技术，活跃在开源社区;二十八九岁到三十岁之间确立一件具体事情，一件我真正感兴趣又能改变一部分人生活的事情;三十知天命，用个三五年将这件事情做好，出点成绩,然后享受人生:)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Life is beautiful!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ubtutu use kde</title>
+   <link href="http://basicvbvc.github.com/2013/03/22/ubtutu-use-kde"/>
+   <updated>2013-03-22T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/22/ubtutu-use-kde</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://public.sn2.livefilestore.com/y1pBfNHUoX-bohBfKWhvr-UjxmlBXddTIcRawHhw8h7rfwAPDHPh_P3RPJtJcexbZ_QBcQOClbAlhzj9ZL1AZteUg/Linus%20Torvalds%20F%20U%20NVIDIA%20Wallpaper.jpg&quot; alt=&quot;&quot; /&gt;
+忘了从啥时候起，bumblebee突然不管用了，然后就是闪屏，诅咒一万次这该死的“智能切换”！软件设计的根本性原则都忘了，不应该是以人为本么！我想用就用，不想用就关掉，现在倒好，还得看显卡脸色，BIOS里根本没关闭选项，一拖再拖，刚才，尝试安装了KDE，发现 外类grand！刚看的单词得经常用用，然后，暂时还没闪屏，我这小心脏受不了啊。安装KDE很简单&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install kubuntu-desktop   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后，注销，选择KDE登录。&lt;/p&gt;
+
+&lt;p&gt;顺便再设置下terminal（Konsole）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;开始按钮-&gt;系统设置-&gt;快捷键和手势-&gt;自定义快捷键-&gt;实例(Example)（打上对号）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“运行Konsole”也打上对号,默认设置的快捷键就是ctrl+alt+t&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;over&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;code&gt;c
+site:ljblog.org
+email:basicvbvc@gmail.com
+&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>why fortran</title>
+   <link href="http://basicvbvc.github.com/2013/03/21/why-fortran"/>
+   <updated>2013-03-21T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/21/why-fortran</id>
+   <content type="html">&lt;p&gt;有个疑惑，为什么国内的好多计算机教材作者都将Fortran作为讲解语言，上学期学的编译原理，这学期学的操作系统竟然也是！颇为不理解，上课老师举的例子全照抄课本上的Fortran源码，OS明明基本上都是C啊！干嘛还要用Fortran来讲呢！还好我是在图书馆借的国外的教材，人家上面都是Unix源码，不理解国内写书的为什么非要脱裤子放屁。。。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>杂</title>
+   <link href="http://basicvbvc.github.com/2013/03/21/"/>
+   <updated>2013-03-21T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/</id>
+   <content type="html">&lt;p&gt;昨天竟然失眠了，还记得上一次失眠是在遥远的高一，刚住校一周，老爸说要来看我，重点是带只烤鸡，试想一下在经历了一周食堂大锅饭的摧残下，一只烤鸡意味着什么，然后，我竟然一晚上没睡。&lt;/p&gt;
+
+&lt;p&gt;躺床上先是想了几个拗口的单词，然后还没睡意，又想了道数学题，还不困，又想了下Insertion_sort的简单实现，&lt;strong&gt;shit!&lt;/strong&gt;  还不困,如果按照以往的经验来看，我大可啥都不想，也就睡过去，可是昨晚却悲剧了，一直到3点多才睡。&lt;em&gt;我想，我是喜欢上了一位姑娘。&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>改把节奏带起来了</title>
+   <link href="http://basicvbvc.github.com/2013/03/17/"/>
+   <updated>2013-03-17T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/</id>
+   <content type="html">&lt;p&gt;今晚看了个考研牛人的数学、英语复习建议，对比下，自己真的太慢了，说的好听点是复习的仔细，其实，还是一个效率问题，也该提提速了,仔细算一下，其实时间所剩无几，&lt;strong&gt;是时候把节奏带起来了&lt;/strong&gt;  以后博客基本不会更新其他的了除了记录自己的考研过程，这次考研，我是真心想搏一把的，so...很多事情，只能暂时放一放了。不就一年么，忍一忍也就过去了。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Cpp</title>
+   <link href="http://basicvbvc.github.com/2013/03/13/cpp"/>
+   <updated>2013-03-13T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/13/cpp</id>
+   <content type="html">&lt;hr /&gt;
+
+&lt;p&gt;layout: post
+title: &quot;Cpp程序设计笔记&quot;&lt;/p&gt;
+
+&lt;p&gt;大学里面有两个痛点，一个是高数，另一个就是C++，都是大一时欠的债。花了四五天时间把C++程序设计（谭浩强）过了一遍，书的好坏就不评价了，现在的我还没那水平，笔记如下：&lt;/p&gt;
+
+&lt;p&gt;P22 一个整型常量可以有3种表示形式：（1）十进制整数，如120，78l(L) （2）八进制整数，在十进制基础上前面加0即可，如020 （3）十六进制，在十进制基础上前面加0X或0x，如0x25。&lt;/p&gt;
+
+&lt;p&gt;P26 如果在一个字符串中最后一个字符是'\',则表示它是续行符，下一行的字符是该字符串的一部分，如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cout&amp;lt;&amp;lt;&quot;Hello Wor\ 
+ld&quot;&amp;lt;&amp;lt;endl;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P31 位运算符，&amp;lt;&amp;lt;(按位左移） &gt;&gt;（按位右移） &amp;amp;(按位与) |(按位或) ^(按位异或) ~(按位取反)&lt;/p&gt;
+
+&lt;p&gt;P34 ++和--只能用于变量，而不能用于常量和表达式，if i=3;cout&amp;lt;&amp;lt;-i++;(-3)关于这两个运算符，平时用到较多，这里就不赘述了。&lt;/p&gt;
+
+&lt;p&gt;P35 在强制类型转换时，得到的是一个所需类型的中间变量，变量原类型和值并不变，如 (int)x;如果x原来是double，值为3.6，进行强制类型转换得到一个int类型中间变量，值为3，如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double d_i=3.9999;
+cout&amp;lt;&amp;lt;(int)d_i&amp;lt;&amp;lt;' '&amp;lt;&amp;lt;d_i&amp;lt;&amp;lt;endl;   &quot;3    3.9999&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P38 凡是二目运算符，都可以与赋值符一起组成复合赋值符，+=,-=,*=,/=,%=,&amp;lt;&amp;lt;=,&gt;&gt;=,&amp;amp;=,|=,^=  (主要是后面的位运算符，因为我平时很少用到位运算符 sigh...)&lt;/p&gt;
+
+&lt;p&gt;P51 在执行cout语句时，并不是插入一个数据就马上输出一个数据，而是先把插入的数据顺序存放在输出缓冲区中，直到缓冲区满或遇到cout语句中的endl（或'\n',ends,flush)为止，此时将缓冲区中已有的数据一起输出，并清空缓冲区。&lt;/p&gt;
+
+&lt;p&gt;P53  不能用cin语句把空格字符和回车换行符作为字符输入给字符变量，可以通过getchar（）&lt;/p&gt;
+
+&lt;p&gt;P54  设置输出格式：比较常用到的就是n位有效数字，保留n位有效数字，&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cout&amp;lt;&amp;lt;setprecision(n)&amp;lt;&amp;lt;car&amp;lt;&amp;lt;endl;
+ cout&amp;lt;&amp;lt;setprecision(n)&amp;lt;&amp;lt;setiosflags(ios::fixed)&amp;lt;&amp;lt;var&amp;lt;&amp;lt;endl;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P62 在判断一个逻辑量是否为真时，采取的标准是：如果其值是0就认为假，如果其值非0，就认为是真。
+''''c''''
+int i_i=-1;
+if(i_i) cout&amp;lt;&amp;lt;&quot;true&quot;&amp;lt;&amp;lt;endl;
+else cout&amp;lt;&amp;lt;&quot;false&quot;&amp;lt;&amp;lt;endl;
+&lt;code&gt;c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;P69 在switch中，根据switch表达式的值找到与之匹配的case子句，就从此case子句开始顺序执行下去，所以，一般情况下才要在case子句后面加break;i在case子句中虽然包含一个以上执行的子句，但可以不必用{}。多个case子句可共用一组执行语句。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;case 'a':
+case 'b':
+case 'c':cout&amp;lt;&amp;lt;&quot;hehe&quot;&amp;lt;&amp;lt;endl;break;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P 关于for与continue，写了段小代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int main()
+{
+
+#ifdef ABC //这个不是死循环，continue执行完毕，然后执行i++
+for(int i=0;i&amp;lt;=2;i++)
+continue;
+cout&amp;lt;&amp;lt;&quot;不是死循环&quot;&amp;lt;&amp;lt;endl;
+
+#endif
+
+#ifdef ABCD //这个是死循环,i一直是0
+for(int i=0;i&amp;lt;=2;)
+{   continue;
+    i++;
+}       
+cout&amp;lt;&amp;lt;&quot;不是死循环&quot;&amp;lt;&amp;lt;endl;
+#endif
+return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P78  关于getchar(),&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for(;(c=getchar())!='\n';)cout&amp;lt;&amp;lt;c;  可以来输入输出字符串,并且在一些字符串处理中，可以单个字符处理，很方便:)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;P96 在函数声明中可以不写行参名字，如：float add(float,float); 这种函数叫做函数原型（function prototype),只是在编译阶段进行基本的语法检查，所以声不声明行参变量并没什么不同。&lt;/p&gt;
+
+&lt;p&gt;P98 inline function, 可以在声明和定义时都写inlint，也可以只在其中一处写inline，效果相同，ps:对函数作inline声明，只是对编译系统的建议，并不是强制性的，还有，现在编译器也会在优化阶段对某些函数进行inline处理。。&lt;/p&gt;
+
+&lt;p&gt;P101 function overloading ，重载函数的参数个数、参数类型、参数顺序3者中必须至少有一个不同，函数返回值类型可以相同也可以不相同，函数名相同，函数体可相同 可不相同。&lt;/p&gt;
+
+&lt;p&gt;P103 function template, template &lt;typename/class T&gt;   ps：只适用于参数的个数相同而类型不同，且函数体相同的情况，如果参数的个数不同，则不能用函数模板。&lt;/p&gt;
+
+&lt;p&gt;P104  有默认参数的函数&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>pick up</title>
+   <link href="http://basicvbvc.github.com/2013/03/03/pick-up"/>
+   <updated>2013-03-03T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/03/03/pick-up</id>
+   <content type="html">&lt;p&gt;pick up这货好多意思，仍记得高中死背时的艰难劲，英语老师抓得严，基本挨个提问，别看意思多，背着背着也就记住了，今天单独把“不知不觉、潜移默化”这个意思单独挑出来讲讲。我更愿意翻译成'水到渠成'&lt;/p&gt;
+
+&lt;p&gt;有一个很有趣的事情，很多书看的时候觉得很枯燥也不太能看的懂，完全领会不了作者的意图，我一般喜欢认为是根本抓不住事情的本质，然后只好把书束之高阁，过一段时间再翻的话，突然有种茅塞顿开的感觉，SH**!原来说的这么回事，以前经常会很奇怪，最近也没翻过啊，怎么自己突然就悟出来了？&lt;/p&gt;
+
+&lt;p&gt;'水到渠成'说的就是这个道理，别看平时我们貌似在学其他的知识，比如当年学数字逻辑里面的锁存器、寄存器，当时根本没太理解，这都什么东西啊？后来等到学微机原理的时候，突然像打通任督二脉一样，自己竟然悟出来了。知识都是相通的，变的是具体学科，具体知识，不变的永远是处理问题的思想，所以说，我们每一天都在进步，因为每一天都在学习，所以我才大言不惭的将签名设为：每天都在进步！有同学说真题好难啊，我总是接话：水到渠成。背几个单词，做几道数学题，慢慢来嘛，着啥急啊，我一直认为好好把课本过一遍，好多东西串起来了，从本质上理解，这可不是单凭刷题能达到的境界，还有啊，那些悲观主义者，赶快醒醒吧，我们可每天都在进步哦！&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+site:ljblog.org
+email:basicvbvc@gmail.com
+&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>the new start</title>
+   <link href="http://basicvbvc.github.com/2013/02/25/the-new-start"/>
+   <updated>2013-02-25T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/02/25/the-new-start</id>
+   <content type="html">&lt;p&gt;不纠结究竟是the New Start还是the New Beginning了，新的学期又开始了，先得把操作系统、网络、数据库这三个大课学好，看了下选修课，就目前来说有兴趣的是软件工程和网络编程，具体情况还得到时候再说
+这个学期开始给自己列出每周书单，倒不是说一定得每周读基本书，毕竟专业书理解起来还是比较费劲的，督促下自己，每周交几篇读书笔记，本来打算读完一本书写一篇的，后来想想，一个学期也读不了几本啊，还不如每周交几篇，哦，对了，还得练字，虽然这不像一个geek一个干的:( 仔细想想，这学期做的事情还不少，这么重要的一个学期，可不能只埋头考研，从长远来看。庆幸的是我知道自己想要的是什么，那天看到的if...then...思考方式很不错，if我要练字,then我代会就买只钢笔，我得行动起来了！&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>可悲</title>
+   <link href="http://basicvbvc.github.com/2013/02/25/"/>
+   <updated>2013-02-25T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/02/</id>
+   <content type="html">&lt;p&gt;不知道自己想要什么的人是可悲的，这句话有两个出处：一是今天法律课下课时小罗说的“太可悲了”，人文学院的来给我们上课，呵呵 一个要靠每节课点名来留人的课 一个诱惑我们期末容易考高分的课 当然，前提是你得老实，呵呵，岂止是可悲，我觉得老师很可怜。&lt;/p&gt;
+
+&lt;p&gt;二是看到有些人还在纠结考不考研，可悲的是要靠跟风别人来决定自己的选择，不知道自己想要什么，实在可悲&lt;/p&gt;
+
+&lt;p&gt;试一下今晚学的MD语法:  不知道自己想要什么的人是可悲的！&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+site:ljblog.org
+email:basicvbvc@gmail.com
+&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>君生我未生</title>
+   <link href="http://basicvbvc.github.com/2013/02/24/"/>
+   <updated>2013-02-24T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/2013/02/</id>
+   <content type="html">&lt;p&gt;君生我未生，我生君已老&lt;/p&gt;
+
+&lt;p&gt;君恨我生迟，我恨君生早&lt;/p&gt;
+
+&lt;p&gt;君生我未生，我生君已老&lt;/p&gt;
+
+&lt;p&gt;恨不生同时，日日与君好&lt;/p&gt;
+
+&lt;p&gt;我生君未生，君生我已老&lt;/p&gt;
+
+&lt;p&gt;我离君天涯，君隔我海角&lt;/p&gt;
+
+&lt;p&gt;我生君未生，君生我已老&lt;/p&gt;
+
+&lt;p&gt;化蝶去寻花，夜夜栖芳草&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Jekyll Introduction</title>
+   <link href="http://basicvbvc.github.com/jekyll-bootstrap/2011/12/29/jekyll-introduction"/>
+   <updated>2011-12-29T00:00:00+08:00</updated>
+   <id>http://basicvbvc.github.com/jekyll-bootstrap/2011/12/29/jekyll-introduction</id>
+   <content type="html">&lt;p&gt;This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
+Directly following the intro we'll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+
+&lt;h2&gt;Overview&lt;/h2&gt;
+
+&lt;h3&gt;What is Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
+dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &quot;a simple, blog aware, static site generator&quot;.&lt;/p&gt;
+
+&lt;h3&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;This website is created with Jekyll. &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Sites&quot;&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;What does Jekyll Do?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a ruby gem you install on your local system.
+Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory
+is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
+compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
+
+&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder.
+The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+
+&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
+on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
+
+&lt;h3&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements.
+This is a common source of confusion when getting started.
+Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
+
+&lt;h3&gt;Why Should I Care?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is very minimalistic and very efficient.
+The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
+Traditional dynamic blogs like Wordpress require a database and server-side code.
+Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
+
+&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
+&lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
+&lt;li&gt;No internet connection required.&lt;/li&gt;
+&lt;li&gt;Ability to publish via git.&lt;/li&gt;
+&lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
+&lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
+&lt;li&gt;No database required.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;How Jekyll Works&lt;/h1&gt;
+
+&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
+
+&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples.
+This information is not intended to specifically teach you how to do anything, rather it
+is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
+
+&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately
+help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
+
+&lt;h2&gt;Initial Setup&lt;/h2&gt;
+
+&lt;p&gt;After &lt;a href=&quot;/index.html#start-now&quot;&gt;installing jekyll&lt;/a&gt; you'll need to format your website directory in a way jekyll expects.
+Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
+
+&lt;h3&gt;The Jekyll Application Base Format&lt;/h3&gt;
+
+&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- _config.yml
+|-- _includes
+|-- _layouts
+|   |-- default.html
+|   |-- post.html
+|-- _posts
+|   |-- 2011-10-25-open-source-is-good.markdown
+|   |-- 2011-04-26-hello-world.markdown
+|-- _site
+|-- index.html
+|-- assets
+    |-- css
+        |-- style.css
+    |-- javascripts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;&lt;br/&gt;
+  Stores configuration data.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;&lt;br/&gt;
+  This folder is for partial views.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt; &lt;br/&gt;
+  This folder is for the main templates your content will be inserted into.
+  You can have different layouts for different pages or page sections.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;&lt;br/&gt;
+  This folder contains your dynamic content/posts.
+  the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;&lt;br/&gt;
+  This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;&lt;br/&gt;
+  This folder is not part of the standard jekyll structure.
+  The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory.
+  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;(read more: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Usage&quot;&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3&gt;Jekyll Configuration&lt;/h3&gt;
+
+&lt;p&gt;Jekyll supports various configuration options that are fully outlined here:
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Content in Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Content in Jekyll is either a post or a page.
+These content &quot;objects&quot; get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
+
+&lt;h3&gt;Posts and Pages&lt;/h3&gt;
+
+&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
+Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
+
+&lt;h3&gt;Working With Posts&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; &lt;br/&gt;
+Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br/&gt;
+A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory.
+If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
+Additionally, each file must have &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt; prepended to its content.
+YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;&lt;br/&gt;
+Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
+Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; &lt;br/&gt;
+Posts can have tags associated with them as part of their meta-data.
+Tags may be placed on posts by providing them in the post's YAML front matter.
+You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt; &lt;br/&gt;
+Posts may be categorized by providing one or more categories in the YAML front matter.
+Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
+Note categories in Jekyll work in a specific way.
+If you define more than one category you are defining a category hierarchy &quot;set&quot;.
+Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title :  Hello World
+categories : [lessons, beginner]
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This defines the category hierarchy &quot;lessons/beginner&quot;. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll.
+You won't find &quot;lessons&quot; and &quot;beginner&quot; as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
+
+&lt;h3&gt;Working With Pages&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;&lt;br/&gt;
+Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br/&gt;
+In order to register as a Jekyll page the file must contain &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;YAML Front-Matter&lt;/a&gt;.
+Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;&lt;br/&gt;
+Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;&lt;br/&gt;
+If pages are defined in sub-directories, the path to the page will be reflected in the url.
+Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- people
+    |-- bob
+        |-- essay.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;&lt;br/&gt;
+You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;&lt;br/&gt;
+Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;&lt;br/&gt;
+Generating a sitemap is good practice for SEO.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;&lt;br/&gt;
+A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Templates in Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Templates are used to contain a page's or post's content.
+All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;.
+The site variable holds all accessible content and metadata relative to the site.
+The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;&lt;br/&gt;
+Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br/&gt;
+Templates should be coded in HTML and contain YAML Front Matter.
+All templates can contain Liquid code to work with your site's data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;&lt;br/&gt;
+There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;.
+The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined.
+Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
+
+&lt;p&gt;  &lt;pre&gt;&lt;code&gt;...
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;div id=&quot;main&quot;&amp;gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;amp;#123;{content}&amp;amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;  &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h3&gt;Sub-Templates&lt;/h3&gt;
+
+&lt;p&gt;Sub-templates are exactly templates with the only difference being they
+define another &quot;root&quot; layout/template within their YAML Front Matter.
+This essentially means a template will render inside of another template.&lt;/p&gt;
+
+&lt;h3&gt;Includes&lt;/h3&gt;
+
+&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder.
+Includes are NOT templates, rather they are just code snippets that get included into templates.
+In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
+
+&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
+
+&lt;h2&gt;Using Liquid for Templating&lt;/h2&gt;
+
+&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll.
+This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
+
+&lt;h3&gt;What is Liquid?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt;.
+Liquid is designed for end-users to be able to execute logic within template files
+without imposing any security risk on the hosting server.&lt;/p&gt;
+
+&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
+your site and post/page data.&lt;/p&gt;
+
+&lt;h3&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
+
+&lt;p&gt;GitHub uses Jekyll to power &lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.
+GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
+
+&lt;h3&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
+
+&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code.
+The point being you can't do jackshit in liquid that hasn't been allowed explicitly by the implementation.
+What's more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
+
+&lt;p&gt;In Jekyll's case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
+Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
+
+&lt;p&gt;But rather than look a gift horse in the mouth we are going to
+suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt; &lt;br/&gt;
+My personal stance is to not invest time trying to hack liquid. It's really unnecessary
+&lt;em&gt;from a programmer's&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
+you are better off sticking with ruby. Toward that end I've built &lt;a href=&quot;http://github.com/plusjade/mustache-with-jekyll&quot;&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Static Assets&lt;/h2&gt;
+
+&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages.
+That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
+
+&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
+
+&lt;h2&gt;How Jekyll Parses Files&lt;/h2&gt;
+
+&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt; &lt;br/&gt;
+  This is done with textile or markdown.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt; &lt;br/&gt;
+This is done with the liquid templating language.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;&lt;br/&gt;
+All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt;  &lt;br/&gt;
+  These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax.
+  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt; &lt;br/&gt;
+Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through
+Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
+
+&lt;h3&gt;Formatting Files for Parsing.&lt;/h3&gt;
+
+&lt;p&gt;We've outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;.
+Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
+This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
+
+&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout: post
+category : pages
+tags : [how-to, jekyll]
+---
+
+... contents ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
+The data inside the block must be valid YAML.&lt;/p&gt;
+
+&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here:
+&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter&quot;&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
+If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt;
+That is to say loading a post file into a template file that refers to another template file with work in the way you'd expect; as a nested sub-template.&lt;/p&gt;
+
+&lt;h2&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
+
+&lt;p&gt;Ultimately, Jekyll's job is to generate a static representation of your website.
+The following is an outline of how that's done:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt; &lt;br/&gt;
+Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt; &lt;br/&gt;
+Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
+big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata.
+At this stage your site is one big computed ruby object.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;&lt;br/&gt;
+Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s).
+Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &quot;liquified&quot;. &lt;br/&gt;
+ &lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
+hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt; &lt;br/&gt;
+ Finally the liquid templates are &quot;rendered&quot;, thereby processing any liquid syntax provided in the templates
+ and saving the final, static representation of the file.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;&lt;br/&gt;
+Because Jekyll computes the entire site in one fell swoop, each template is given access to
+a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you'll iterate through and format
+using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
+
+&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
+&lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap.
+You can also read the original documentation here: &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Template-Data&quot;&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
+As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
+
+&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
+
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Please take a look at &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+or jump right into &lt;a href=&quot;&quot;&gt;Usage&lt;/a&gt; if you'd like.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
