@@ -11,7 +11,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : LJ'Blog 
-tagline: Playfully doing somehing difficult,whether difficult or not,that is hacking... 
+tagline: Playfully doing somehing difficult,whether useful or not,that is hacking... 
 author :
   name : 李佳
   email : basicvbvc@gmail.com
