@@ -2,7 +2,7 @@
 layout: post
 title: "ubtutu use kde"
 ---
-![](https://public.sn2.livefilestore.com/y1pBfNHUoX-bohBfKWhvr-UjxmlBXddTIcRawHhw8h7rfwAPDHPh_P3RPJtJcexbZ_QBcQOClbAlhzj9ZL1AZteUg/Linus%20Torvalds%20F%20U%20NVIDIA%20Wallpaper.jpg)
+![](https://lh4.googleusercontent.com/-Q1CapE6IwQ8/UWGQwys06tI/AAAAAAAAAPk/Sm0V5BT5Fu4/s630/asa.jpg)
 忘了从啥时候起，bumblebee突然不管用了，然后就是闪屏，诅咒一万次这该死的“智能切换”！软件设计的根本性原则都忘了，不应该是以人为本么！我想用就用，不想用就关掉，现在倒好，还得看显卡脸色，BIOS里根本没关闭选项，一拖再拖，刚才，尝试安装了KDE，发现 外类grand！刚看的单词得经常用用，然后，暂时还没闪屏，我这小心脏受不了啊。安装KDE很简单
 
 	sudo apt-get install kubuntu-desktop   
