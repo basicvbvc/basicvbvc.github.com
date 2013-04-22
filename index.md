@@ -6,7 +6,7 @@ title: LJ'Blog
 <br>
 # About Me 
 
-国内普通学校大三学生
+大三学生
 
 信息安全专业
 
@@ -17,6 +17,22 @@ title: LJ'Blog
  目前给自己的定位是：一个知识分子 
 
 ![](https://lh4.googleusercontent.com/-eIgJat55Si8/UWGQtsCPxDI/AAAAAAAAAPc/E4zD7nNM8sU/s300/shangchuan.jpg) 
+
+
+
+那些在青春时期有关奋斗的日子，必定是要一个人走过的。
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>
