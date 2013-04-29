@@ -26,6 +26,7 @@ title: LJ'Blog
 
 
 
+<script type="text/javascript" src="http://www.douban.com/service/badge/basicvbvc/?show=collection&amp;n=8&amp;columns=2&amp;picsize=medium&amp;hidelogo=yes" ></script>
 
 
 
