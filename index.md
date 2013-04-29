@@ -31,8 +31,7 @@ title: LJ'Blog
 
 
 <br>
-<script type="text/javascript" src="http://www.douban.com/service/badge/basicvbvc/?show=collection&amp;select=favorite&amp;n=9&amp;columns=3&amp;picsize=medium&amp;hidelogo=yes&amp;cat=movie|book|site" ></script>
-<br>
+
 <br>
 <br>
 <br>
