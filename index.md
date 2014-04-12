@@ -6,11 +6,11 @@ title: LJ'Blog
 <br>
 # About Me 
 
-大三学生
+大四学生
 
-信息安全专业
+CS读研中
 
-目前考研中
+
 
 喜欢更新blog(时间充裕的话)
 
